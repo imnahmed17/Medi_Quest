@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Medi Quest</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navi">Close</string>
+    <string name="addProfilePicture"><u><b>Add a profile picture</b></u></string>
+    <string name="editProfilePicture"><u><b>Edit profile picture</b></u></string>
+    <string name="vitamin">Vitamins and minerals are considered essential nutrients—because acting in concert, they perform hundreds of roles in the body.
+        They help shore up bones, heal wounds, and bolster your immune system. They also convert food into energy, and repair cellular damage. Fruits and
+        vegetables naturally are low in fat. They add nutrients, flavor, and variety to your diet. Look for colorful fruits and vegetables, especially orange
+        and dark green. Choose these foods: Broccoli, cauliflower, and Brussels sprouts. Leafy greens, such as chard, cabbage, romaine, and bok choy. Dark,
+        leafy greens, such as spinach and kale. Squash, carrots, sweet potatoes, turnips, and pumpkin. Snap peas, green beans, bell peppers, and asparagus.
+        Apples, plums, mangos, papaya, pineapple, and bananas. Blueberries, strawberries, cherries, pomegranates, and grapes. Citrus fruits, such as grapefruits
+        and oranges. Peaches, pears, and melons. Tomatoes and avocados.</string>
+    <string name="gym">Fitness is defined as being in good physical shape or being suitable for a specific task or purpose. An example of fitness is the status
+        of your physical health. If you are regularly physically active, you may: reduce your risk of a heart attack manage your weight better have a lower blood
+        cholesterol level lower the risk of type 2 diabetes and some cancers have lower blood pressure have stronger bones, muscles and joints and lower risk of
+        developing osteoporosis lower your risk of falls recover better from periods of hospitalisation or bed rest feel better – with more energy, a better mood,
+        feel more relaxed and sleep better. Doing any physical activity is better than doing none. If you currently do no physical activity, start by doing some,
+        and gradually build up to the recommended amount. Be active on most, preferably all, days every week. Accumulate 150 to 300 minutes (2 ½ to 5 hours) of
+        moderate intensity physical activity or 75 to 150 minutes (1 ¼ to 2 ½ hours) of vigorous intensity physical activity, or an equivalent combination of
+        both moderate and vigorous activities, each week. Do muscle strengthening activities on at least two days each week.</string>
+    <string name="doc">12 doctors share their top tips for a healthy lifestyle Do you do any of these? Go slow on antibiotics Professor Tim Spector, consultant
+        physician and author of The Diet Myth "For years I would develop sinusitis every time I got a cold and take antibiotics. I was an antibiotic junkie –
+        taking four or five courses a year. Then, eight years ago, I went to a lecture by Professor Martin Blaser and it changed everything for me. He warned
+        that regular courses of antibiotics adversely affect your immune system and could lead to weight gain because of their impact on your gut bacteria. It
+        was the best piece of advice I’ve ever received. I stopped taking antibiotics for sinus infections – they only reduced the symptoms by a day or so,
+        anyway – and have never looked back. From having six colds a year, I now have one every couple of years, I don’t get sinusitis and I’ve stayed a healthy
+        weight. I became concerned about antibiotics in food as well, and now try to eat organic and only eat meat once or twice a month. Dr Sarah Jarvis,
+        Good Housekeeping GP
+        "I’m a pale, freckled redhead and got sunburnt several times as a child. Once I became a medical student I was extremely worried about my risk of skin
+        cancer and have avoided the sun ever since. It’s only been in recent years that I’ve become aware of the health risks associated with lack of vitamin D.
+        Colleagues including neurologists (multiple sclerosis), rheumatologists (osteoporosis) and cardiologists (heart disease) warned me there was a silent
+        epidemic of vitamin D deficiency, and I was shocked to find I was way down in the deficient range. I now take Fultium, a vitamin D supplement." Drink
+        more water Dimple Thakrar, dietician and founder of Fresh Nutrition
+
+"The best advice I ever got was from my mother-in-law, who told me I needed to drink more water for my skin. She had the most amazing skin, so I took her advice. Once I started, I realised that I got more headaches when I didn’t drink enough. Being dehydrated can also make you bloated, as your body will hold on to water and you’ll be more likely to suffer from constipation. It can even leave you feeling fatigued – people often think they have low blood sugar when they are actually dehydrated. I make sure I have about eight drinks a day (ideally no more than four are caffeinated), but go by how you feel and by the colour of your urine. It should be pale and straw-coloured: any darker and you are probably dehydrated. And 20 years on, I have great skin, too!"
+
+        For more knowledge, consult our doctors or call our helplines.
+    </string>
+</resources>

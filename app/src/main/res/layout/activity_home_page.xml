@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgApps"
+    android:fitsSystemWindows="true"
+    tools:context=".HomePageActivity"
+    tools:openDrawer="start">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/main_menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/menu" />
+
+            <TextView
+                android:id="@+id/txtdashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:text="My Dashboard"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtdashboard"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="6dp"
+                android:text="9 items"
+                android:textColor="#52BAFF"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/chat_icon" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="4">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card1Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout1id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/hospital_icon" />
+
+                            <TextView
+                                android:id="@+id/card1_text_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Hospital"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card2Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout2id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/doctors_icon" />
+
+                            <TextView
+                                android:id="@+id/card2_text_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Doctors"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card3Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout3id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/ambulance_icon" />
+
+                            <TextView
+                                android:id="@+id/card3_text_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Ambulance"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card4Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout4id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/blood_bank_icon" />
+
+                            <TextView
+                                android:id="@+id/card4_text_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Blood Bank"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card5Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout5id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/symptoms_icon" />
+
+                            <TextView
+                                android:id="@+id/card5_text_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Symptoms"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card6Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout6id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/health_tips_icon" />
+
+                            <TextView
+                                android:id="@+id/card6_text_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Health Tips"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card7Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout7id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/chart_and_calculator_icon" />
+
+                            <TextView
+                                android:id="@+id/card7_text_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="BMI Calculator"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card8Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout8id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/ask_a_doctor_icon" />
+
+                            <TextView
+                                android:id="@+id/card8_text_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Ask a Doctor"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card9Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout9id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/logout_icon" />
+
+                            <TextView
+                                android:id="@+id/card9_text_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Logout"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </GridLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

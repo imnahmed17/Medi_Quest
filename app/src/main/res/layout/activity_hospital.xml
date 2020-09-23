@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HospitalActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/nav_back">
+
+        <ImageView
+            android:id="@+id/back_icon_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="-40dp"
+            android:padding="15dp"
+            android:src="@drawable/back_icon" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_id"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="-40dp"
+            android:layout_toEndOf="@id/back_icon_Id"
+            android:background="@drawable/design1"
+            app:iconifiedByDefault="false"
+            app:queryHint="Search by name">
+
+        </androidx.appcompat.widget.SearchView>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView_id"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"/>
+
+</LinearLayout>

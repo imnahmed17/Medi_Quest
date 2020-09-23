@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/nav_back"
+    android:gravity="center"
+    tools:context=".HealthTipsActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="78dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/health"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/nutrition1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/food"
+            android:scaleType="fitXY"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:id="@+id/fitness1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/fitness"
+            android:scaleType="fitXY"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/nutrition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Nutrition"
+            android:layout_marginRight="0dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/fitness2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Fitness"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/advice1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/advice"
+        android:scaleType="fitXY"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:id="@+id/advice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Advice"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorPrimaryDark" />
+
+</LinearLayout>

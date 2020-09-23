@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_id"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/nav_back">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/back_icon_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-40dp"
+                android:padding="15dp"
+                android:src="@drawable/back_icon" />
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/android"/>
+
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:fontFamily="@font/bungee"
+            android:includeFontPadding="false"
+            android:text="Noman Ahmed"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/full_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:includeFontPadding="false"
+            android:text="Onirban007"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/addProfilePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:includeFontPadding="false"
+            android:text="@string/editProfilePicture"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/text1_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:text="Full Name" />
+
+        <TextView
+            android:id="@+id/fName_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="33dp"
+            android:text="Noman Ahmed"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text2_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:text="Userame" />
+
+        <TextView
+            android:id="@+id/uName_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="33dp"
+            android:text="Onirban007"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text3_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:text="E-Mail" />
+
+        <TextView
+            android:id="@+id/email_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="33dp"
+            android:text="info@gmail.com"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text4_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="10dp"
+            android:text="Phone Number" />
+
+        <TextView
+            android:id="@+id/phone_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="33dp"
+            android:text="01612345678"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/verified_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Email Not Verified!"
+            android:textColor="@color/colorBgApps"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/verify_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorBgApps1"
+            android:text="VERIFY NOW"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorBgApps1"
+            android:fontFamily="@font/bungee"
+            android:text="Update"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/change_pass_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBgApps1"
+            android:fontFamily="@font/bungee"
+            android:text="Change  Password"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</LinearLayout>

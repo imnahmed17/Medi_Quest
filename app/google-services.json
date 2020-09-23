@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "459453503156",
+    "firebase_url": "https://medi-quest.firebaseio.com",
+    "project_id": "medi-quest",
+    "storage_bucket": "medi-quest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459453503156:android:c572721ddf485dbed529e1",
+        "android_client_info": {
+          "package_name": "com.example.mediquest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459453503156-m1d4jchrcma76bki7glgk8doj9a0m0i5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJWdjiBgonIZKSbZPlpfdA-xS0g7BzD-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459453503156-m1d4jchrcma76bki7glgk8doj9a0m0i5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
